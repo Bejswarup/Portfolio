@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Swarup Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body class="body">
+    <header>
+      <nav>
+          <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Swarup's Portfolio</a></li>
+            <li class="hideOnMobile"><a href="/">Home</a></li>
+            <li class="hideOnMobile"><a href="#About">About</a></li>
+            <li class="hideOnMobile"><a href="#Education">Education</a></li>
+            <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#Contact">Contact Me</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="items">
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Swarup</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" onclick="openFullScreenPdf()" > <a href="">Resume</a></button>
+             
+            <button class="btn"> <a href="https://github.com/Bejswarup">GitHub </a> </button>
+            <button class="btn"> <a href="https://www.linkedin.com/in/swarup-bej-b58a261a6/">LinkedIn </a></button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="Images/bg.png" alt="Developer" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection" id="About">
+        <h1>About Me</h1>
+        <p>
+          Hello! My name is Swarup Bej, and I am currently pursuing my M.Tech in
+          Computer Science and Data Processing from the Indian Institute of
+          Technology Kharagpur.
+        </p>
+        <p>
+          I have a strong passion for technology and a keen interest in
+          exploring the field of data processing and analysis. Through my
+          coursework and projects, I have gained knowledge and experience in
+          various areas such as machine learning, data mining, and software
+          development.
+        </p>
+        <p>
+          I believe in continuous learning and keeping up with the latest
+          advancements in the field. I enjoy tackling challenging problems and
+          coming up with innovative solutions. With a strong foundation in
+          computer science and a data-driven mindset, I strive to contribute to
+          the development of intelligent systems that can make a positive impact
+          on society.
+        </p>
+        <p>
+          Besides my academic pursuits, I actively participate in hackathons and
+          coding competitions to enhance my problem-solving skills and
+          collaborate with like-minded individuals. In my free time, I enjoy
+          reading books, exploring new technologies, and working on personal
+          coding projects.
+        </p>
+      </section>
+      <hr />
+      <section id="Education">
+        <h1>Education</h1>
+        <div class="thirdSection">
+        <table class ="table">
+          <tr>
+            <th>Degree</th>
+            <th>Branch</th>
+            <th>University</th>
+            <th>Year of Passing</th>
+            <th>CGPA/percentage</th>
+          </tr>
+          <tr>
+            <td>MTech</td> 
+            <td>CSDP</td>
+             <td><a class="purple"  href="https://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a></td>
+             <td>2024</td>
+             <td>8.14</td>
+          </tr>
+          <tr>
+            <td>MSc</td> 
+            <td>Mathematics</td>
+             <td><a class="purple" href="https://uohyd.ac.in/" target="_blank">University of Hyderabad</a></td>
+             <td>2020</td>
+             <td>8.10</td>
+          </tr>
+          <tr>
+            <td>BSc</td> 
+            <td>Mathematics</td>
+             <td><a class="purple" href="https://midnaporecollege.ac.in/" target="_blank">Midnapore College</a></td>
+             <td>2018</td>
+             <td>73%</td>
+          </tr>
+        </table>
+        </ul>
+      </div>
+      </section>
+      <hr />
+      <section class="fourthSection" id="Projects">
+        <h1>Projects</h1>
+        <ol>
+
+          <li>
+            <h3> <a class = "purple" href="project1.html" target="_blank">Automated Trading System (Master Thesis Project) | Dr. Arindam Banerjee | IIT Kharagpur | Aug 2023 - Present</a> </h3>
+            <ul>
+              <li>Developing an automated trading system in Python to optimize decision-making and minimize emotional bias in stock market trading.</li>
+              <li>Conducting thorough backtesting with historical data to refine trading strategies, achieve a balance between minimizing losses,
+                maximizing profits, and integrating machine learning models to accurately predict market direction.</li>
+            </ul>
+
+          </li>
+
+          <li>
+            <h3> <a class = "purple" href="https://github.com/Bejswarup/Market_Segmentation_using_K-Mean_clustering" target="_blank">Customer Segmentation Analysis (Term Project) | AI & ML | Dr. Budhananda Banerjee | IIT Kharagpur | Jan 2023 - April 2023</a>
+            </h3>
+            <ul>
+              <li>Collaborated in a team of 5, employing K-Means Clustering techniques to segment shopping mall customers into four distinct categories.</li>
+              <li>It will enhance the shopping experience, optimize inventory, lead to increased customer satisfaction and loyalty, and boost profitability.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3> <a class = "purple" href="https://github.com/Bejswarup/Handwritten-Digit-Classification-MNIST" target="_blank">Handwritten Digit recognition using CNN (Seminar Project) | Dr. P.V.S.N. Murthy | IIT Kharagpur | July 2022 - Nov 2022</a> </h3>
+            <ul>
+              <li> Incorporated a deep CNN architecture with ReLU, softmax activations, and Adam optimization for accurate handwritten digit classification.</li>
+              <li>Utilized sparse categorical cross-entropy loss in the deep CNN, achieving 97% accuracy on MNIST for robust digit recognition.</li>
+            </ul>
+
+          </li>
+
+          <li>
+            <h3> <a class = "purple" href="https://github.com/Bejswarup/Mobile-Price-Prediction" target="_blank">Mobile Price Prediction (Term Project) | Big Data Analysis | Dr. Bibhas Adhikary | IIT Kharagpur | Jan 2023 - April 2023</a> </h3>
+            <ul>
+              <li> Developed a machine learning model to predict the price of mobile phones using KNN, PCA and LDA, achieving an accuracy of 89%.</li>
+              <li>Collected data of different mobile phones from different e-commerce websites using web scraping tools Beautiful Soup library of Python</li>
+            </ul>
+
+          </li>
+        </ol>
+            
+      </section>
+      <hr />
+
+      <section class="contact" id="Contact">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hidesidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+      function openFullScreenPdf() {
+                  // Replace "your-pdf-file.pdf" with the path to your PDF file.
+                  var pdfUrl = "https://drive.google.com/drive/folders/1hOQ3mrbDjZXUHbCEV921HQUVR0xXBxQL";
+                  var newWindow = window.open(pdfUrl, "_blank", "fullscreen=yes");
+                  
+                  // Check if the new window was successfully opened.
+                  if (newWindow) {
+                    newWindow.focus();
+                  } else {
+                    alert("Please allow pop-ups to view the PDF in full-screen.");
+                  }
+                }
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Devloper",
+          "Web Designer",
+          "Data Scietist",
+          "ML Engineer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
